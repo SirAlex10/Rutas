@@ -1,0 +1,162 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.home-container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.route-selection {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.route-button {
+  background-color: white;
+  color: rgb(132, 126, 126);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.route-button:hover {
+  background-color: grey;
+}
+
+.routes-list {
+  background-color: #a42935;
+  border-radius: 20px;
+  padding: 20px;
+  /*width: 80%;*/
+}
+
+.route {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.route:hover {
+  background-color: #743d3d;
+  border-radius: 10px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+}
+
+.modal-image-container {
+  flex: 1;
+  max-width: 33%;
+  margin-right: 20px;
+}
+
+.modal-route-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.modal-schedule {
+  flex: 2;
+  margin-bottom: 20px;
+}
+
+.modal-schedule p {
+  font-weight: bold;
+}
+
+.modal-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-schedule li {
+  background-color: #838080;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.time-passed {
+  background-color: red !important;
+}
+
+.time-upcoming {
+  background-color: green !important;
+}
+.modal-description {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.modal-close-button:hover {
+  background-color: #555;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(122, 118, 118, 0.75);
+}

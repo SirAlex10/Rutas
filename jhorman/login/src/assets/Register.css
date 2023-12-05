@@ -1,0 +1,32 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: var(--fuente);
+  background-color: rgb(129, 129, 129);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.contenedor{
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 0px !important;
+   border: none;
+  
+}
+
+/*.contenedor-formulario{
+  display: block !important;
+}*/
